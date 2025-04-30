@@ -1,0 +1,5 @@
+Task:
+* Given a URL to a text (log) file, containing URLs, display the most popular one. 
+* Example log: https://public.karat.io/content/urls.txt
+* DO NOT parse the URLs.
+
