@@ -1,0 +1,5 @@
+Task:
+* Given array of ints, return the 3 largest, sorted. 
+* Repeats allowed. 
+* Get array from file, example.txt: [3, 3, 3]. 
+

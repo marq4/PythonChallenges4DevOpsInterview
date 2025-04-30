@@ -1,0 +1,3 @@
+Task:
+* Execute a Linux shell command with args from Python, passed to the script. 
+

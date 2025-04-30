@@ -1,6 +1,6 @@
 # Python challenges for the DevOps interview
 
-Forget about Leetcode and complex algorithms, for DevOps we only need to complete simple tasks as fast as possible. Practice with these challenges until you can solve them entirely from memory in less than 15 minutes each. 
+Forget about Leetcode and complex algorithms, for DevOps we only need to complete simple tasks as fast as possible. Practice these challenges until you can solve them all entirely from memory in less than a half hour. 
 
 * 01: Display bottom of log file. 
 * 02: Get the most popular URL from a remote log file. 

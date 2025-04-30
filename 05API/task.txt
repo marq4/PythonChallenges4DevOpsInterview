@@ -1,0 +1,4 @@
+Task:
+* Call an API from Python. 
+* Example: https://jsonplaceholder.typicode.com/posts/1 
+

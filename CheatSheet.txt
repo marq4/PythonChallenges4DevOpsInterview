@@ -1,0 +1,135 @@
+* Receive params: 
+	+ import sys 
+	+ sys.argv 	# List 
+
+* Check if file exists: 
+	+ import os 
+	+ os.path.exists(path: str) 
+
+* Read a file:
+	+ with open(path, 'r') as file: 
+		line = file.readline() 
+
+* Print with no newline:
+	+ print(string, end='')
+
+* Create a list of string per line from a text file URL: 
+	+ python3 -m pip install requests 
+	+ import requests 
+	+ response = requests.get(URL: str) 
+	+ content = response.text 
+	+ lines = content.split() 
+
+* Get the most popular occurrence from a list of strings using Counter: 
+	+ from collections import Counter 
+	+ counts = Counter(my_list) 
+	+ most_pop = counts.most_common(1) 
+	+ print(f"Most popular URL is: {most_pop[0][0]} with {most_pop[0][1]} occurrences. ")
+
+* Iterate over a dictionary: 
+	+ for key in dictio:
+		print(f"{key} -> {dictio[key]}") 
+
+* Execute a shell command: 
+	+ import subprocess 
+	+ result = subprocess.run(['ls', '-lA'], capture_output=True, text=True)  
+
+* Execute Windows command: 
+	+ from subprocess import check_output 
+	+ result = check_output("dir C:", shell=True).decode() 
+
+* Generate a table with realistic fake user data: date, name, email: 
+	+ python3 -m pip install pandas Faker 
+	+ import pandas 
+	+ from faker import Faker 
+	+ f = Faker() 
+	+ data_frame = pandas.DataFrame({'Date': [f.date() for d in range(target)], 'Name': [f.name() for n in range(target)], 'Email': [f.email() for e in range(target)]})
+
+* Call an API: 
+	+ import requests 
+	+ response = requests.get(url) 
+	+ # Check response.status_code 
+
+* Split a string by whitespace: 
+	+ str.split() 
+
+* Best way to convert hex to decimal: 
+	+ int(hex, 16)
+
+* Regex match: 
+	+ import re 
+	+ pattern = re.compile("REGEX")
+	+ if pattern.matches( my_str ) 
+
+* Read from stdin until input is empty: 
+	+ while True:
+		user_input = input()
+		if not user_input: 
+			break
+
+* Convert IPv4 in hex to decimal dotted quad notation: 
+	+ %%% TODO: REDUX 
+
+* Create a requirements file for a Python project: 
+	+ pip freeze > requirements.txt 
+
+* Install the dependencies of a Python project from a requirements file:
+	+ pip installl -r requirements.txt 
+
+* What is the purpose of __init__.py: 
+	+ It is used to mark folders as package directories. 
+	+ When someone import a package, this __init__.py is executed first to run initialization code for the package. 
+
+* Error handling: 
+	+ try, except, else, finally. 
+
+* Load a secret stored in an env var: 
+	+ import os 
+	+ os.getenv('VAR', 'default_val') 
+
+* Create an isolated env with virtual envs: 
+	+ Each project can have its own dependencies. 
+	+ python -m venv myenv 
+	+ myenv\Scripts\activate 			# Activate in Win. 
+	+ source myenv/bin/activate 			# Activate in Linux. 
+
+* Connect to a DB: 
+	+ import sqlite3 
+	+ conn = sqlite3.connect('example.db')
+	+ cursor = conn.cursor() 
+	+ cursor.execute('INSERT INTO ...') 
+	+ conn.commit() 
+	+ cursor.execute('SELEC * FROM Users')
+	+ rows = cursor.fetchall() 
+	+ conn.close() 
+
+* Perform unit testing: 
+	+ import unittest 
+	+ class Tests(unittest.TestCase):
+		def my_test(self):
+			self.assertEqual(...)
+	+ unittest.main()
+
+* Store/persist a dictio to disk: 
+	+ import json 
+	+ json.dump(data, file) 
+	+ data = json.load(file)
+
+* Remove special chars from a string to create a list of words:
+	+ raw_in: str = input() 	# [qwer, werty, rtyu]' 
+	+ clean = ','.join(c for c in raw_in if c.isalnum())
+	+ array = clean.split(',') 
+
+
+* Design an API that gives you the time: 
+	+ %%%
+
+
+
+
+
+
+
+
+
+
