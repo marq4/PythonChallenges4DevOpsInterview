@@ -1,0 +1,7 @@
+Task:
+* Suppose we don't have direct access to a Windows server, but we can examine the log file we need to look at via Python. 
+* Unfortunately the file is SO LONG we can't load it entirely to memory!
+* The log is GBs in size and has arbitrarily large lines. 
+* We want to see the bottom of the log to quickly see what broke the Build! 
+* Write a Python script that outputs last N lines from log file, both passed as params from the command line.
+
