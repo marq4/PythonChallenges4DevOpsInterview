@@ -1,0 +1,18 @@
+Task:
+* Given a list of products, either return the most popular one, or if there's a tie, one at random from the most popular products.
+
+* Input:
+  + N: number of products. 
+  + List of products, one per line. 
+
+* Example: 
+8
+greenShirt
+bluePants
+redShirt
+blackShoes
+redPants
+redPants
+whiteShirt
+redShirt
+

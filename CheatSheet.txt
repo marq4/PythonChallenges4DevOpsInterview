@@ -120,6 +120,10 @@
 	+ clean = ','.join(c for c in raw_in if c.isalnum())
 	+ array = clean.split(',') 
 
+* Choose an element at random from a list: 
+	+ import random 
+	+ random.choice(list) 
+
 
 * Design an API that gives you the time: 
 	+ %%%
