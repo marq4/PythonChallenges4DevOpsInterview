@@ -1,0 +1,5 @@
+Task:
+* Given example log file, extract all IPv4 addresses which are in hex format and convert them to decimal dotted quad notation.
+  + Example: 'ip-0A1021E9' -> 10.16.33.233.
+* Do the whole thing in Python, so no GNU+Linux commands.
+
