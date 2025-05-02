@@ -1,0 +1,3 @@
+Task:
+* Design an API that gives the user the current server time.
+

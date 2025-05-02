@@ -68,7 +68,15 @@
 			break
 
 * Convert IPv4 in hex to decimal dotted quad notation: 
-	+ %%% TODO: REDUX 
+	+ for ip in hex_ips:
+		result = ''
+		for index in range(0, 8, 2):
+			pair = ip[index:index+2]
+			decimal = int(pair[0], 16) * 16 + int(pair[1], 16)
+			result = result + str(decimal)
+			if index < 6:
+				result += '.'
+		print(f"{ip} -> {result}")
 
 * Create a requirements file for a Python project: 
 	+ pip freeze > requirements.txt 
@@ -124,16 +132,13 @@
 	+ import random 
 	+ random.choice(list) 
 
-
-* Design an API that gives you the time: 
-	+ %%%
-
-
-
-
-
-
-
-
-
-
+* Design an API that returns the current time: 
+	+ python3 -m pip install flask 
+	+ from flask import Flask 
+	+ from datetime import datetime 
+	+ app = Flask(__name__) 
+	+ @app.route('/') 
+	    def get_time():
+		curent_time = datetime.now() 
+		return '{' + '"time": "' + current_time.strftime("%H:%M:%S") + '"}', 200 
+	+ app.run() 

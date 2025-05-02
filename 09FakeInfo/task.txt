@@ -1,0 +1,3 @@
+Task:
+* Generate a table with fake user data: date, name, email.
+
