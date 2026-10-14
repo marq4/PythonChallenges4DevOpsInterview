@@ -1,3 +1,7 @@
+* See module documentation:
+	+ Open up Python stand-alone program. 
+	+ help(subprocess) 
+
 * Receive params: 
 	+ import sys 
 	+ sys.argv 	# List 
@@ -8,7 +12,7 @@
 
 * Read a file:
 	+ with open(path, 'r') as file: 
-		line = file.readline() 
+		for line in file:  
 
 * Print with no newline:
 	+ print(string, end='')
@@ -33,6 +37,7 @@
 * Execute a shell command: 
 	+ import subprocess 
 	+ result = subprocess.run(['ls', '-lA'], capture_output=True, text=True)  
+	+ print(result.stdout) 
 
 * Execute Windows command: 
 	+ from subprocess import check_output 
@@ -44,6 +49,11 @@
 	+ from faker import Faker 
 	+ f = Faker() 
 	+ data_frame = pandas.DataFrame({'Date': [f.date() for d in range(target)], 'Name': [f.name() for n in range(target)], 'Email': [f.email() for e in range(target)]})
+
+* Generate an example IPv4 address: 
+	+ from faker import Faker 
+	+ fake = Faker() 
+	+ fake.ipv4() 
 
 * Call an API: 
 	+ import requests 
@@ -86,10 +96,11 @@
 
 * What is the purpose of __init__.py: 
 	+ It is used to mark folders as package directories. 
-	+ When someone import a package, this __init__.py is executed first to run initialization code for the package. 
+	+ When someone imports a package, this __init__.py is executed first to run initialization code for the package. 
 
 * Error handling: 
 	+ try, except, else, finally. 
+	+ try, except Exception as e 
 
 * Load a secret stored in an env var: 
 	+ import os 
